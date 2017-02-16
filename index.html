@@ -1,1 +1,161 @@
-HipGISAXS
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="Abhinav Sarje" />
+<meta name="keywords" content="HipGISAXS, GISAXS, X-ray scattering, high-performance computing, parallel computing, massively parallel, software, simulation, scattering simulation" />
+<meta name="description" content="The Web Space for HipGISAXS" />
+<meta name="copyright" content="&copy; 2017 HipGISAXS Team" />
+
+<title>HipGISAXS :: A Massively Parallel High-Performance GISAXS Simulation Software</title>
+
+<style type="text/css">
+@import url(styles/hipgisaxsmain.css);       /* import the main css file */
+</style>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-42349366-1', 'https://hipgisaxs.github.io');
+	ga('send', 'pageview');
+	$('#download').on('click', function() { ga('send', 'event', 'download', 'click'); });
+</script>
+
+</head>
+
+<body onload="window.defaultStatus='HipGISAXS';" id="home">
+
+<div id="container">
+
+<div class="download">
+  <a href="downloads/hipgisaxs-1.0.tar.gz" id="downloadtargz" onclick="dataLayer.push({'event': 'download-tar.gz'});">
+    <img border="0" width="80" src="http://github.com/images/modules/download/tar.png"> </img>
+  </a>
+  <a href="downloads/hipgisaxs-1.0.zip" id="downloadzip"  onclick="dataLayer.push({'event': 'download-zip'});">
+    <img border="0" width="80" src="http://github.com/images/modules/download/zip.png"> </img>
+  </a>
+</div>
+
+<h1>
+	<a href="https://hipgisaxs.github.io">HipGISAXS</a>
+	<span class="small"> high-performance gisaxs</span>
+</h1>
+
+<div class="description">A massively-parallel high-performance x-ray scattering data analysis code</div>
+
+<h2>Latest News</h2>
+<ul>
+	<li>May 27, 2016: HipGISAXS version 1.0 is out!</li>
+</ul>
+
+<h2>Supported Platforms</h2>
+<p>Clusters and supercomputers, or single processor systems (including your laptop). HipGISAXS has been optimized for high-efficiency with the following processor architectures:</p>
+<ul>
+	<li>Intel multi-core processors</li>
+	<li>AMD multi-core processors</li>
+	<li>NVidia GPUs (Tesla or Quadro)</li>
+	<li>Intel Xeon Phi processors (MIC). [NOTE: This support has been temporarily removed.]</li>
+</ul>
+
+<h2>Dependencies</h2>
+<ul>
+	<li>UNIX-like based system</li>
+	<li>GNU GCC 4.7 or above, or Intel C++ Compilers 13 or above</li>
+	<li><a href="http://scons.org/download.php">Scons</a> 2.0 or above</li>
+	<li><a href="http://www.boost.org">Boost</a> 1.49.0 or above</li>
+	<!-- <li><a href="http://www.libtiff.org">TIFF Library (libtiff)</a></li> -->
+	<li><a href="http://remotesensing.org/libtiff">TIFF Library (libtiff)</a></li>
+	<li>[Optional] (For multi-node parallel version only) <a href="http://www.open-mpi.org/software">OpenMPI</a> 1.4.4 or above, or <a href="http://www.mpich.org/downloads">MPICH2</a>, or <a href="http://mvapich.cse.ohio-state.edu/download/mvapich2">MVAPICH2</a></li>
+	<li>[Optional] (For GPU version only) <a href="http://developer.nvidia.com/cuda/cuda-downloads">NVidia CUDA SDK</a> version 5.5 or above</li>
+	<li>[Optional] Parallel <a href="http://www.hdfgroup.org/downloads">HDF5 Library</a></li>
+	<li>[Optional] (HDF5 dependency) <a href="http://www.zlib.net">Zlib</a></li>
+	<li>[Optional] (HDF5 dependency) <a href="http://www.hdfgroup.org/doc_resource/SZIP">Szip Library</a></li>
+</ul>
+
+<h2>Download</h2>
+<p>You can download this project as a
+	<a href="downloads/hipgisaxs-1.0.tar.gz" onclick="dataLayer.push({'event': 'download-tar.gz'});">tarball</a> or a <a href="downloads/hipgisaxs-1.0.zip" onclick="dataLayer.push({'event': 'download-zip'});">zip</a> file.
+</p>
+<p>You can also clone the project with <a href="http://git-scm.com">Git</a> by running:</p>
+<pre>$ git clone https://github.com/HipGISAXS/HipGISAXS.git</pre>
+<p>This will enable you to easily update your copy to the latest version of HipGISAXS.</p>
+<p/>
+
+<h2>Installation</h2>
+<p>Use "scons" to compile the software and generate the application binary. For details please refer to the README file provided with the software.</p>
+
+<h2>Documentation</h2>
+<p>A user guide is included in the software package.</p>
+<p>Wiki at <a href="https://github.com/HipGISAXS/HipGISAXS/wiki">https://github.com/HipGISAXS/HipGISAXS/wiki</a>.</p>
+<p>Input description at <a href="https://webhipgisaxs.lbl.gov">https://webhipgisaxs.lbl.gov</a>.</p>
+
+<h2>Citation</h2>
+<p>When using HipGISAXS software, please cite the following in your work:</p>
+<p>1. S. Chourou, A. Sarje, X.S. Li, E. Chan, A. Hexemer, "HipGISAXS: A High Performance Computing Code for Simulating Grazing Incidence X-Ray Scattering Data," Journal of Applied Crystallography, vol. 46, no. 6, pp. 1781-1795, 2013.</p>
+<p>2. A. Sarje, X.S. Li, S. Chourou, E. Chan, A. Hexemer, "Massively Parallel X-ray Scattering Simulations," in Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis (Supercomputing, SC'12), no. 46, pp. 46:1-46:11, November 2012.</p>
+
+<h2>Licensing</h2>
+<p>The HipGISAXS software is only available to be downloaded and used by employees of academic research institutions, not-for-profit research laboratories, or governmental research facilities.  Please read the <a href="files/NonCommerical_End_User_License_Agreement_HipGISAXS.pdf">Non-Commercial End User License Agreement</a> before downloading the software.  By downloading the software, you are agreeing to be bound by the terms of this <a href="files/NonCommerical_End_User_License_Agreement_HipGISAXS.pdf">Non-Commercial End User License Agreement</a>.</p>
+
+<h2>Developers</h2>
+<ul>
+	<li>
+		<span class="name">Abhinav Sarje</span>
+		<span class="namecomment">[lead developer]</span>
+		<span class="emailid">(abhinav.sarje [AT] gmail.com)</span>
+	</li>
+	<li>
+		<span class="name">Dinesh Kumar</span>
+		<span class="emailid">(dkumar [AT] lbl.gov)</span>
+	</li>
+	<li>
+		<span class="name">Singanallur Venkatakrishnan</span>
+		<span class="emailid">(svvenkatakrishnan [AT] lbl.gov)</span>
+	</li>
+	<li>
+		<span class="name">Xiaoye Li</span>
+		<span class="emailid">(xsli [AT] lbl.gov)</span>
+	</li>
+	<li>
+		<span class="name">Alexander Hexemer</span>
+		<span class="emailid">(ahexemer [AT] lbl.gov)</span>
+	</li>
+</ul>
+
+<h2>Alumni Developers</h2>
+<ul>
+	<li>
+		<span class="name">Slim Chourou</span>
+		<span class="emailid">(stchourou [AT] lbl.gov)</span>
+	</li>
+	<li>
+		<span class="name">Elaine Chan</span>
+		<span class="emailid">(erchan [AT] lbl.gov)</span>
+	</li>
+</ul>
+
+<h2>Acknowledgements</h2>
+<ul>
+<li> This work was supported by the LBNL LDRD funding, Office of Science, of the U.S. Department of Energy under Contract No. DE-AC02-05CH11231.</li>
+<li> This work is partially supported by the Basic Energy Sciences (BES) Early Career Award of the U.S Department of Energy, and partially supported by the Center for Applied Mathematics for Energy Research Applications (CAMERA), which is a partnership between Basic Energy Sciences (BES) and Advanced Scientific Computing Research (ASCR) at the U.S Department of Energy.</li>
+</ul>
+
+<h2>Users</h2>
+<p>Following is a partial list of HipGISAXS users. If you use HipGISAXS and wish to be added to the list, please contact us.</p>
+<ul>
+	<li>
+		<span class="username">Ting Xu,</span>
+		<span class="useraffiliation">University of California Berkeley.</span>
+	</li>
+</ul>
+
+<div class="footer">
+</div>
+
+</div> <!-- div container -->
+
+</body>
+</html>
